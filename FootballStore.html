@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Accessories Store</title>
+
+  <style>
+    
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f5;
+      
+    }
+
+    /* Navbar Styles */  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: cursive;
+      background-color: blue;
+      padding: 15px 30px;
+    }
+
+    .navbar .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .navbar .nav-links li {
+      margin-left: 20px;
+    }
+
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #f39c12;
+    }
+    input[type="search"], input[type="reset"] {
+      background-color:rgb(45, 143, 173);
+      color:whitesmoke;
+      padding:10px 20px;
+      border-radius:5px;
+      transition:0.1s;
+      align-items: center;
+      width: 400px;
+      height:30px;}
+
+    /* red Section */
+    .hero {
+      text-align: center;
+      padding: 80px;
+      background-color: red;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* Product Section */
+    .products {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px ;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin: 15px 0 10px;
+      font-size: 22px;
+    }
+
+    .product-card p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #777;
+    }
+
+    .product-card button {
+      padding: 10px 20px;
+      background-color: #f39c12;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #e67e22;
+
+    }
+    /* FORM */
+    .form-container {
+            background-color: rgb(86, 82, 197);
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            width: 400px;
+            
+
+            
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    /* Footer */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 0%;
+      margin-top: 2px;
+      width: 100%;
+
+    }
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            grid-template-rows: repeat(2, 1fr); 
+            gap: 15px; 
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        .main {
+            padding: 1rem;
+            background-color:white;
+            
+        }
+        .main section{
+            background-color:white;
+        }
+        .main h2{
+        
+            background-color:white;
+        }
+        
+        
+        .catalogue {
+            padding: 1rem;
+            text-align: center;
+            color:#8AAAE5;
+        }
+        
+        .catalogue h2 {
+            font-size: 1.75rem;
+            color: black;
+            margin-bottom: 1rem;
+            text-align:left;
+        }
+        
+        .gears-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            background-color: white;
+        }
+        
+        .gears-item {
+            background-color:#8AAAE5;
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .gears-item:hover{
+            transform: scale(1.25);
+        }
+        
+        
+        
+        .gears-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+        
+        
+        
+        .gears-item button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .gears-item button:hover {
+            background-color: greenyellow;
+        }
+        
+        
+        }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <h1 style="color: whitesmoke;" >Goal Line Goods</h1>
+    <nav>
+      <input type="search" type="SEARCH">
+      <ul class="nav-links">
+        
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#footer">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <h2>Your One-Stop Shop for Football Accessories</h2>
+    <p>Get the latest gear and play like a pro!</p>
+  </section>
+
+  
+  <section class="products">
+    <div class="product-card" id="shop">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRReF-cEoJakysBOkxDF_0PIXORnwv1R6mJzw&s" alt="Football">
+      <h3>Football Section</h3>
+      <p>High-quality football for training and matches.</p><br>
+      <button onclick="location.href='#footballs'"> Go To Product </button>
+      
+    </div>
+
+    <div class="product-card">
+      <img src="https://www.soccerbible.com/media/142311/messi-6-min.jpg" alt="Boots">
+      <h3>Boots Section</h3>
+      <p>Comfortable and durable boots for all surfaces.</p><br>
+      <button onclick="location.href='#boots'">Go To Product</button>
+      
+    </div>
+
+    <div class="product-card">
+      <img src="https://gfx.r-gol.com/media/res/products/442/188442/465x605/041926-02_1.webp" alt="Gloves">
+      <h3>Gloves Section</h3>
+      <p>Grip-enhancing gloves for goalkeepers.</p>
+      <button onclick="location.href='#gloves'">Go To Product</button>
+      
+    </div>
+    <div class="product-card">
+      <img src="https://i.redd.it/some-of-my-football-jersey-collections-been-collecting-v0-5djknl6gzk9b1.jpg?width=1536&format=pjpg&auto=webp&s=75679139524683bbca375c4492f3fdef3834e260"alt="Jerseys">
+      <h3>Jersey Section</h3>
+      <p>Latest Top Quality original jerseys and kits. </p>
+      <button onclick="location.href='#jersey'">Go To Product</button>
+      
+    </div>
+   
+    
+    <main class="main">
+      <section id="catalogue" class="catalogue">
+          <h2 id="footballs">POPULAR FOOTBALLS</h2>
+          <div class="gears-grid">
+             
+              <div class="gears-item">
+                  <img src="https://www.shutterstock.com/image-photo/netherlands-rotterdam-december-14th-2017-600nw-774438409.jpg" alt="Telstar">
+                  <h3 style="color: black" id="#footballs">ADIDAS TELSTAR</h3>
+                  <button>Add to Cart</button>
+              </div>
+              
+              <div class="gears-item">
+                  <img src="https://images.csmonitor.com/csmarchives/2010/06/0618-world-cup-Jabulani-ball.jpg?alias=standard_900x600" alt="Jabulani">
+                  <h3 style="color: black;">ADIDAS JABULANI </h3>
+                  
+                  <button >Add to Cart</button>
+              </div>
+            
+              <div class="gears-item">
+                  <img src="https://cdn.mos.cms.futurecdn.net/nDJRNZSPnz7C5C8hp3GNhh.jpg" alt="Nike Strike">
+                  <h3 style="color: black;">NIKE STRIKE</h3>
+                  <button >Add to Cart</button>
+              </div>
+              
+             
+          </div>
+          <br>
+          <div class="gears-grid">
+             
+              <div class="gears-item">
+                  <img src="https://shopvancouverfc.com/cdn/shop/files/DerbystarMiniBallGreenSide_6ea2a558-d15b-410b-817e-55920c37d0f9.jpg?v=1688156743" alt="DerbyStar">
+                  <h3 style="color: black;">DERBYSTAR BUNDESLIGA</h3>
+                  <button >Add to Cart</button>
+              </div>
+             
+              <div class="gears-item">
+                  <img src="https://www.shutterstock.com/editorial/image-editorial/MbT0Q6w5M2z1M440ODgxMzc=/efl-play-offs-puma-orbita-1-gold-match-440nw-13908797aw.jpg" alt="Orbita">
+                  <h3 style="color: black;">PUMA ORBITA </h3>
+                  <button >Add to Cart</button>
+              </div>
+              
+              <div class="gears-item">
+                  <img src="https://citybazaronline.com/_next/image?url=https%3A%2F%2Fcboprodstorage.blob.core.windows.net%2Fimages%2Fproduct%2F8741673356482-0.jpg&w=3840&q=75" alt="Symbolo">
+                  <h3 style="color: black;">NIVIA SYMBOLO</h3>
+                  <button >Add to Cart</button>
+              </div>
+              
+          </div>
+          <br>
+          <h2 id="boots">POPULAR BOOTS</h2>
+          <div class="gears-grid">
+              
+              <div class="gears-item">
+                  <img src="https://images-cdn.ubuy.co.in/659f2c7d750f52139474769a-nike-men-39-s-academy-football-shoe.jpg" alt="Nike AIR">
+                  <h3 style="color: black">NIKE AIR ZOOM 1</h3>
+                  <button >Add To Cart</button>
+              </div>
+              
+              <div class="gears-item">
+                  <img src="https://boothype.com/wp-content/uploads/2023/03/adidas-predator-accuracy-football-boots-soccer-cleats-review-1-jpg.webp" alt="Predetors">
+                  <h3 style="color: black;">ADIDAS PREDATORS</h3>
+                  <button >Add to Cart</button>
+              </div>
+              
+              <div class="gears-item">
+                  <img src="https://cdn.mos.cms.futurecdn.net/N9vP7ne26bzmG23zSP7XmU-1200-80.jpeg.webp" alt="New Balance">
+                  <h3 style="color: black;">NEW BALANCE FURON</h3>
+                  <button >Add to Cart</button>
+              </div>
+              
+          </div>
+          <br>
+          <div class="gears-grid">
+              
+              <div class="gears-item">
+                  <img src="https://cdn.mos.cms.futurecdn.net/LXZPuJe2j9BBr7J3Ah5dHg-1200-80.jpeg.webp" alt="Mercurial">
+                  <h3 style="color: black;">NIKE MERCURIAL</h3>
+                  <button >Add to Cart</button>
+              </div>
+            
+              <div class="gears-item">
+                  <img src="https://cdn.mos.cms.futurecdn.net/WGGPG322tD6fmSfudsj7Pg-1200-80.jpg.webp" alt="Adidas F50 ">
+                  <h3 style="color: black;">ADIDAS F50</h3>
+                  <button >Add to Cart</button>
+              </div>
+             
+              <div class="gears-item">
+                  <img src="https://cdn.mos.cms.futurecdn.net/yqAoBdFjNhxGTwNncnJyci-1200-80.png.webp" alt="Copa Sense">
+                  <h3 style="color: black;">ADIDAS COPASENSE</h3>
+                  <button >Add to Cart</button>
+              </div>
+              
+          </div>
+          <br>
+          <h2 id="gloves">POPULAR GLOVES</h2>
+          <div class="gears-grid">
+              
+              <div class="gears-item">
+                  <img src="https://assets.goal.com/images/v3/blt5fa68e36cc8790d9/Sondico_Aqua_Elite_.png?auto=webp&format=pjpg&width=1920&quality=60" alt="Sondica">
+                  <h3 style="color: black;">SONDICA AQUA ELITE</h3>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="gears-item">
+                  <img src="https://i.pinimg.com/736x/c3/f6/f2/c3f6f212786f31331da2fb43afccca82.jpg" alt="Adidas pro">
+                  <h3 style="color: black;">ADIDAS ACE TRANS PRO</h3>
+                  <button >Add to Cart</button>
+              </div>
+             
+              <div class="gears-item">
+                  <img src="https://i.ytimg.com/vi/G3tCrxEM7nw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCGv22DRjxxsnO6PopOyiWTLkeB2w" alt="Nike Mercurial">
+                  <h3 style="color: black;">NIKE MERCURIAL TOUCH ELITE</h3>
+                  <button >Add to Cart</button>
+              </div>
+              
+          </div>
+          <br>
+          <div class="gears-grid">
+              
+              <div class="gears-item">
+                  <img src="https://gfx.r-gol.com/media/res/products/842/114842/465x605/rekawice-new-balance-furon-dispatch-nfgdisp6ao_2.png" alt="New Balance">
+                  <h3 style="color: black;">NEW BALANCE FURON</h3> 
+                  <button>Add to Cart</button>
+              </div>
+              
+              <div class="gears-item">
+                  <img src="https://www.lovellsoccer.co.uk/features/splash-pages/soccer/goalkeepers/nikeglove-aug24.jpg" alt="Nike Grip 3">
+                  <h3 style="color: black;">NIKE GRIP 3</h3>
+                  <button>Add to Cart</button>
+              </div>
+             
+              <div class="gears-item">
+                  <img src="https://5.imimg.com/data5/SELLER/Default/2024/8/439960820/JT/VD/GE/144689860/whatsapp-image-2024-08-01-at-3-48-25-pm-500x500.jpeg" alt="Nivia blaze">
+                  <h3 style="color: black;">NIVIA BLAZE 2.0</h3>
+                  <button>Add to Cart</button>
+              </div>
+            
+          </div>
+          <br>
+          <h2 id="jersey">POPULAR JERSEYS</h2>
+          <div class="gears-grid">
+             
+              <div class="gears-item">
+                  <img src="https://www.soccerbible.com/media/158646/madrid-8-min.jpg" alt="Real Madrid">
+                  <h3 style="color: black;">REAL MADRID HOME KIT 24/25</h3>
+                  <button>Add to Cart</button>
+              </div>
+              
+              <div class="gears-item">
+                  <img src="https://assets.goal.com/images/v3/bltd2b0265c41ea7557/GOAL%20-%20Blank%20WEB%20-%20Facebook%20-%202024-07-18T124829.156.jpg" alt="Barcalona">
+                  <h3 style="color: black;">BARCELONA HOME KIT 24/25</h3>
+                  <button>Add to Cart</button>
+              </div>
+             
+              <div class="gears-item">
+                  <img src="https://brand.assets.adidas.com/video/upload/f_auto,q_auto/if_w_gt_1920,w_1920/glbl_aclubs_fcbayern_home_football_ss24_launch_home_pdp_mh2_03_d_1_c83749365e.jpg" alt="Bayern">
+                  <h3 style="color: black;">BAYERN MUNICH HOME 24/25</h3>
+                  <button>Add to Cart</button>
+              </div>
+          
+          <div class="gears-grid">
+            <div class="gears-item">
+              <img src="https://mgscouture-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2023/02/14132319/more-coming-soon-1.png" alt="Coming Soon">
+                 
+            </div>
+
+          </div>
+              
+              
+              
+          </div>
+          <br>
+      </section>
+  </main>
+  <div class="form-container",     >
+    <h2>New? JOIN US !!!</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+    <footer class="footer" id="footer">
+      <p>&copy; 2024 Wallpaper Gallery</p>
+  </footer>
+
+ 
+  
+
+</body>
+</html>
